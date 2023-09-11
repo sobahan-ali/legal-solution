@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judge</title>
+    <!-- font poppins  and font EB Garamond  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind css and daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- customize tailwind css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        btnRegular: '#B68C5A',
+                    },
+                    backgroundImage: {
+                        bgBanner: "url('./images/banner.png')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-garamond {
+            font-family: 'EB Garamond', serif;
+
+        }
+
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="max-w-screen-xl mx-auto px-10 lg:px-20">
+    <header>
+        <!-- start navbar -->
+        <nav class="mb-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <div class="text-sm breadcrumbs">
+                                <ul class="space-x-3">
+                                    <li><a>Home</a></li>
+                                    <li><a>Services</a></li>
+                                    <li>Cases</li>
+                                    <li>Blog</li>
+                                    <li>Contact Us</li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                    <img src="./images/logo2.png" class="   " alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="text-sm breadcrumbs">
+                        <ul class="space-x-3">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li>Cases</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-btnRegular text-white font-semibold text-xl">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- start banner -->
+        <section class="bg-bgBanner h-[400px] md:h-[550px] bg-no-repeat bg-center">
+            <div class="text-center space-y-5 md:space-y-7 items-center pt-5 px-3 md:py-0 md:px-2 md:pt-32">
+                <h1 class="text-4xl md:text-7xl text-white font-extrabold font-garamond">
+                    We Provide Effective
+                    <br>
+                    Legal Solutions
+                </h1>
+                <p class="font-poppins text-base text-[#E7E7E7]">
+                    There are many variations of passages of Lorem Ipsum available, but the majority <br>
+                    have suffered alteration in some form, by injected humour.
+                </p>
+                <div>
+                    <input type="text" placeholder="Search your services"
+                        class="input input-bordered w-full max-w-xs" />
+                    <button class="btn bg-btnRegular">search</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+
+        </section>
+    </main>
+</body>
+
+</html>
